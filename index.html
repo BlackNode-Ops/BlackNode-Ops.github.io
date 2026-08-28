@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlackNode</title>
+  <style>
+    :root {
+      --ink: #09090a;
+      --paper: #f3eee6;
+      --mute: #8a8580;
+      --line: #262524;
+      --hair: #3a3936;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: var(--ink); color: var(--paper); }
+    body {
+      min-height: 100vh;
+      font-family: "Helvetica Neue", Helvetica, Arial, ui-sans-serif, system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .sheet {
+      width: min(38rem, calc(100% - 3.2rem));
+      margin: 0 auto;
+      padding: 6.4vh 0 7vh;
+    }
+    header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid var(--hair);
+      margin-bottom: 2.6rem;
+    }
+    .brand { display: flex; align-items: center; gap: 0.65rem; }
+    .dot {
+      width: 0.46rem; height: 0.46rem;
+      background: var(--paper); border-radius: 50%;
+    }
+    h1 {
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.38em; text-transform: uppercase;
+    }
+    .kicker {
+      color: var(--mute); font-size: 0.66rem;
+      letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .lede {
+      font-size: clamp(1.85rem, 3.6vw, 2.4rem);
+      font-weight: 400; letter-spacing: -0.035em;
+      line-height: 1.12; max-width: 14ch;
+      margin-bottom: 1.15rem;
+    }
+    .who {
+      color: var(--mute); font-size: 1rem;
+      line-height: 1.5; max-width: 36ch;
+      margin-bottom: 3.3rem;
+    }
+    h2 {
+      font-size: 0.62rem; font-weight: 600;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--mute); margin-bottom: 0.85rem;
+    }
+    section { margin-bottom: 3.3rem; }
+    .solutions { border-top: 1px solid var(--hair); }
+    .solutions article {
+      display: grid;
+      grid-template-columns: 7.2rem 1fr;
+      gap: 1.1rem;
+      padding: 0.95rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .solutions h3 { font-size: 0.95rem; font-weight: 500; }
+    .solutions p {
+      color: var(--mute); font-size: 0.9rem;
+      line-height: 1.45;
+    }
+    .shops { border-top: 1px solid var(--hair); }
+    .shops li {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: baseline;
+      padding: 0.95rem 0;
+      border-bottom: 1px solid var(--line);
+      list-style: none;
+    }
+    .shops .name {
+      font-size: 1.15rem; font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+    .shops .line {
+      color: var(--mute); font-size: 0.88rem;
+      line-height: 1.4;
+    }
+    .packages { list-style: none; border-top: 1px solid var(--hair); }
+    .packages li {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.15rem 1.25rem;
+      padding: 0.95rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .packages .name { font-size: 0.98rem; font-weight: 500; }
+    .packages .blurb {
+      grid-column: 1; color: var(--mute);
+      font-size: 0.8rem; line-height: 1.4;
+    }
+    .price {
+      font-size: 0.95rem;
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+    a.mail {
+      color: var(--paper); text-decoration: none;
+      font-size: 0.95rem;
+      border-bottom: 1px solid var(--hair);
+      padding-bottom: 0.12rem;
+    }
+    a.mail:hover { border-bottom-color: var(--paper); }
+    .reach {
+      color: var(--mute); font-size: 0.88rem;
+      margin-bottom: 0.75rem; line-height: 1.45;
+    }
+    @media (max-width: 560px) {
+      .sheet { width: calc(100% - 2.2rem); }
+      header { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+      .lede { max-width: 12ch; }
+      .solutions article,
+      .shops li { grid-template-columns: 1fr; gap: 0.28rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header>
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <h1>BlackNode</h1>
+      </div>
+      <p class="kicker">Websites · Phone apps · Care</p>
+    </header>
+
+    <p class="lede">BlackNode builds the shop you can actually run.</p>
+    <p class="who">A website people can find. A phone app they keep. Owner tools so you are not waiting on a developer for hours, photos, or offers. Auto, cleaning, landscaping, barber, welding, food.</p>
+
+    <section>
+      <h2>Solutions</h2>
+      <div class="solutions">
+        <article>
+          <h3>Website</h3>
+          <p>The shop online. Hours, work, a way to reach you. Built like the business, not a template.</p>
+        </article>
+        <article>
+          <h3>Phone app</h3>
+          <p>Same shop on their phone. Home screen. Yours to send to regulars.</p>
+        </article>
+        <article>
+          <h3>Owner care</h3>
+          <p>You change copy, photos, hours, offers. It stays yours.</p>
+        </article>
+        <article>
+          <h3>Monthly care</h3>
+          <p>After it launches, we stay on it.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Shops</h2>
+      <ul class="shops">
+        <li>
+          <span class="name">Auto repair</span>
+          <span class="line">The shop, the work, a way in.</span>
+        </li>
+        <li>
+          <span class="name">Carpet and tile</span>
+          <span class="line">The job, then the book.</span>
+        </li>
+        <li>
+          <span class="name">Landscaping</span>
+          <span class="line">The yard, the crew, the next job.</span>
+        </li>
+        <li>
+          <span class="name">Barber</span>
+          <span class="line">The chair. Booking that sticks.</span>
+        </li>
+        <li>
+          <span class="name">Welding</span>
+          <span class="line">The work. A serious way to call.</span>
+        </li>
+        <li>
+          <span class="name">Food / BBQ</span>
+          <span class="line">The menu. The shop people already know.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Packages</h2>
+      <ul class="packages">
+        <li>
+          <span class="name">Start</span>
+          <span class="price">$999.99</span>
+          <span class="blurb">Site + care. Plus monthly care.</span>
+        </li>
+        <li>
+          <span class="name">Studio</span>
+          <span class="price">$1,500</span>
+          <span class="blurb">Site + phone app.</span>
+        </li>
+        <li>
+          <span class="name">Signature</span>
+          <span class="price">$2,500</span>
+          <span class="blurb">Site + app + owner tools.</span>
+        </li>
+        <li>
+          <span class="name">Biggest</span>
+          <span class="price">$3,500</span>
+          <span class="blurb">The full shop build.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p class="reach">Studio email.</p>
+      <p><a class="mail" href="mailto:opsblacknode@gmail.com">opsblacknode@gmail.com</a></p>
+    </section>
+
+  </main>
+</body>
+</html>
