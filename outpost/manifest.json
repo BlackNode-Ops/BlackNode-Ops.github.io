@@ -1,0 +1,10 @@
+{
+  "name": "Outpost",
+  "short_name": "Outpost",
+  "description": "Side desk to push HUBPLACE on X. Not part of HUBPLACE.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#020304",
+  "theme_color": "#020304",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
