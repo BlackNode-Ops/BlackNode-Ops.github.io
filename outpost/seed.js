@@ -61,11 +61,9 @@ const seed = {
     { id: "r3", target: "Mane City", body: "Not a city-builder. Not competing with Mane City. A holder can play both.\n\nMine is a browser world where the thing you own walks in with you." }
   ],
   tracker: [
-    { q: "from:legion_cro", why: "Your live account" },
     { q: "HubPlace OR hubplace OR \"hub place\"", why: "Product mentions" },
     { q: "from:LoadedLions_CDC", why: "Grant and licence" },
     { q: "Open License OR LionGrant Loaded Lions", why: "Application chatter" },
-    { q: "@legion_cro", why: "Replies to you" },
     { q: "from:ManeCityGame", why: "Game-layer context" }
   ],
   reveal: [

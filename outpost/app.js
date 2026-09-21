@@ -1,4 +1,4 @@
-const STORAGE_KEY = "outpost.v3";
+const STORAGE_KEY = "outpost.v4";
 const BANNED = ["vault","partner","official","endorsed","backed by","exclusive","guaranteed","apy","yield","passive income","floor","wen","lfg","gamefi","p2e","small creatures: unbound"];
 const views = [
   ["today","Today","Ship one sliver. Leave the map in the dark."],
